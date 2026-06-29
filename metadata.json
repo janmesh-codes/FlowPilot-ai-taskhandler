@@ -1,0 +1,6 @@
+{
+  "name": "FlowPilot",
+  "description": "An AI Chief of Staff that proactively plans, prioritizes, schedules, and adapts your task pipeline to guarantee you hit every deadline.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

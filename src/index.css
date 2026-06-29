@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Fraunces", serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --font-display: "Fraunces", serif;
+
+  /* Refined Letter Spacing for Premium Warm Look */
+  --tracking-premium-tight: -0.03em;
+  --tracking-premium-normal: -0.01em;
+  --tracking-premium-wide: 0.1em;
+
+  /* Sleek Interface palette mapping updated to a natural warm organic layout */
+  --color-slate-950: #121e15; /* Forest black */
+  --color-slate-900: #1c2b21; /* Deep forest */
+  --color-slate-850: #293d30;
+  --color-slate-800: #3c5243;
+  --color-slate-700: #546a5c;
+  --color-slate-600: #748c7d;
+  --color-slate-500: #9cb1a4;
+  --color-slate-400: #c2d1c8;
+  --color-slate-300: #e3ebe6;
+  --color-slate-200: #f1f5f3;
+  --color-slate-100: #fdfdfd;
+}
+
+@layer base {
+  body {
+    @apply bg-[#f5eedc] text-[#121e15] antialiased selection:bg-[#bbf246] selection:text-[#121e15];
+  }
+  
+  /* Smooth scrollbars */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f5eedc;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #c2d1c8;
+    border-radius: 9999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #9cb1a4;
+  }
+}
+
+/* Elegant smooth transitions for tabs and pipelines */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.45s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Solid Outline / Neo-Brutalist CauseHouse Styled Utility Classes */
+.cause-card {
+  @apply bg-[#fcfaf2] border-2 border-[#121e15] rounded-[2.2rem] p-6 shadow-[5px_5px_0px_0px_#121e15] transition-all duration-300;
+}
+
+.cause-card-hover {
+  @apply hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[7px_7px_0px_0px_#121e15];
+}
+
+.cause-btn-lime {
+  @apply bg-[#bbf246] border-2 border-[#121e15] rounded-full text-xs font-mono uppercase tracking-wider font-bold text-[#121e15] px-6 py-3.5 shadow-[4px_4px_0px_0px_#121e15] hover:translate-y-[1px] hover:shadow-[2px_2px_0px_0px_#121e15] transition-all cursor-pointer inline-flex items-center justify-center gap-2;
+}
+
+.cause-btn-white {
+  @apply bg-[#fdfcf7] border-2 border-[#121e15] rounded-full text-xs font-mono uppercase tracking-wider font-bold text-[#121e15] px-6 py-3.5 shadow-[4px_4px_0px_0px_#121e15] hover:translate-y-[1px] hover:shadow-[2px_2px_0px_0px_#121e15] transition-all cursor-pointer inline-flex items-center justify-center gap-2;
+}
+
+.cause-pill-lime {
+  @apply inline-flex items-center gap-1.5 px-4.5 py-1.5 rounded-full text-[10px] font-bold tracking-wider uppercase bg-[#bbf246] text-[#121e15] border-2 border-[#121e15] font-mono shadow-[2px_2px_0px_0px_#121e15];
+}
+
+.cause-pill-beige {
+  @apply inline-flex items-center gap-1.5 px-4.5 py-1.5 rounded-full text-[10px] font-bold tracking-wider uppercase bg-[#f5eedc] text-[#121e15] border-2 border-[#121e15] font-mono shadow-[2px_2px_0px_0px_#121e15];
+}
+
+/* Text outline utility to match "your mission" style in the photo */
+.cause-text-outline {
+  color: transparent;
+  -webkit-text-stroke: 1.5px #121e15;
+}
+
+.cause-text-outline-lime {
+  color: #bbf246;
+  -webkit-text-stroke: 1.5px #121e15;
+}
+
+/* Translucent Glassmorphic Cards for other pages */
+.glass-card {
+  background-color: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 2px solid rgba(18, 30, 21, 0.12);
+  border-radius: 2.2rem;
+  padding: 1.5rem;
+  box-shadow: 0 8px 32px 0 rgba(18, 30, 21, 0.04);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card-hover {
+  background-color: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 2px solid rgba(18, 30, 21, 0.12);
+  border-radius: 2.2rem;
+  padding: 1.5rem;
+  box-shadow: 0 8px 32px 0 rgba(18, 30, 21, 0.04);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card-hover:hover {
+  transform: translateY(-2px);
+  background-color: rgba(255, 255, 255, 0.55);
+  border-color: rgba(18, 30, 21, 0.22);
+  box-shadow: 0 12px 36px 0 rgba(18, 30, 21, 0.08);
+}
+
+
+
