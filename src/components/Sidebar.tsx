@@ -124,11 +124,11 @@ export default function Sidebar({ activeTab, onTabChange, isEmergencyActive }: S
         {/* User Identity / Status indicator */}
         <div className="border-t-2 border-[#121e15] pt-4 flex items-center gap-3">
           <div className="h-9 w-9 rounded-full bg-[#bbf246] border-2 border-[#121e15] flex items-center justify-center text-[#121e15] font-serif font-black text-sm shadow-[2px_2px_0px_0px_#121e15]">
-            JM
+            FP
           </div>
           <div className="text-left">
-            <p className="text-xs font-bold text-[#121e15]">Janmesh</p>
-            <p className="text-[10px] text-[#121e15]/60 font-mono">sjanmesh1351</p>
+            <p className="text-xs font-bold text-[#121e15]">FlowPilot Workspace</p>
+            <p className="text-[10px] text-[#121e15]/60 font-mono">AI Productivity Platform</p>
           </div>
         </div>
 

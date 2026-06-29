@@ -102,12 +102,12 @@ export default function DashboardView({
               <span>AI Chief of Staff Active</span>
             </div>
             <h1 className="text-4xl md:text-6xl font-serif font-black text-[#121e15] tracking-tight leading-none mb-3">
-              Hi, Janmesh!<br />Build <span className="cause-text-outline-lime font-black">your mission</span> inside FlowPilot.
+              Ready to conquer <span className="cause-text-outline-lime font-black">today's goals?</span>
             </h1>
             <p className="text-[#121e15]/85 mt-3 text-sm md:text-base max-w-xl leading-relaxed font-sans font-medium">
               {isEmergencyActive 
                 ? "Emergency System Active. Core tasks prioritised. Focus solely on execution."
-                : "Your timeline is fully optimized. The scheduler has balanced your cognitive load to ensure no deadlines fall through."
+                : "Your AI Chief of Staff has analyzed your priorities, optimized your schedule, and prepared your personalized execution plan."
               }
             </p>
           </div>

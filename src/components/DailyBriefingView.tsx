@@ -103,7 +103,7 @@ export default function DailyBriefingView({
     const unfinished = tasks.filter(t => !t.completed);
     const completedCount = tasks.filter(t => t.completed).length;
 
-    let text = `Good morning Janmesh. Today, you have ${unfinished.length} action items on your radar. We have already completed ${completedCount} subtasks representing an optimized focus velocity. `;
+    let text = `Welcome back. Today, you have ${unfinished.length} action items on your radar. We have already completed ${completedCount} subtasks representing an optimized focus velocity. `;
     
     if (isEmergencyActive) {
       text += `Our active telemetry indicates Emergency Mode is running. I have fully reprioritized your evening blocks and scheduled high-cognitive coding sprints. No slack remains. Let's execute.`;
